@@ -1,6 +1,6 @@
 pdf:
-	pdflatex maneuvers.tex
-	pdflatex maneuvers.tex
+	pdflatex lesson-plans.tex
+	pdflatex lesson-plans.tex
 
 clean:
-	rm maneuvers.log maneuvers.aux maneuvers.pdf maneuvers.toc maneuvers.out
+	rm lesson-plans.log lesson-plans.aux lesson-plans.pdf lesson-plans.toc lesson-plans.out
