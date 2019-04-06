@@ -3,4 +3,4 @@ pdf:
 	pdflatex maneuvers.tex
 
 clean:
-	rm maneuvers.log maneuvers.aux maneuvers.pdf maneuvers.toc
+	rm maneuvers.log maneuvers.aux maneuvers.pdf maneuvers.toc maneuvers.out
