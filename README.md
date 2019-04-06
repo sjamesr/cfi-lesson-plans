@@ -12,4 +12,4 @@ installed. Then:
 $ make
 ```
 
-will build a PDF.
+will build a PDF. The document is designed to be printed two-sided.
