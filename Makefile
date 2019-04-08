@@ -1,6 +1,8 @@
-pdf:
-	pdflatex lesson-plans.tex
-	pdflatex lesson-plans.tex
+c172rg.pdf:
+	cd c172rg; \
+	  pdflatex lesson-plans-c172rg.tex; \
+	  pdflatex lesson-plans-c172rg.tex
+	mv c172rg/lesson-plans-c172rg.pdf .
 
 clean:
-	rm -f *.log *.aux *.pdf *.toc *.out
+	find . -regex '.*\.\(log\|aux\|pdf\|toc\|out\)' -print0 | xargs -0 rm -f
