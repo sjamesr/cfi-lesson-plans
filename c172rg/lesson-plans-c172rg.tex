@@ -1,5 +1,8 @@
 \documentclass[twoside,openright]{report}
 
+\let\oldsection\section
+\def\section{\cleardoublepage\oldsection}
+
 \usepackage[margin=1in]{geometry}
 \usepackage{cclicenses}
 \usepackage{emptypage}
@@ -51,8 +54,10 @@ Private and Commercial Pilot Lesson Plans (C172RG)}
   \end{center}
 \end{titlepage}
 
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \tableofcontents
+
+\chapter{Ground Lessons}
 
 \input{../common/pp-intro}
 \input{../common/considerations}
@@ -74,5 +79,9 @@ Private and Commercial Pilot Lesson Plans (C172RG)}
 \input{../common/visual-illusions}
 \input{../common/spin-avoidance}
 \input{../common/vfr-flight-planning}
+
+\chapter{Maneuvers}
+
+\input{accelerated-stalls-c172rg.tex}
 
 \end{document}
