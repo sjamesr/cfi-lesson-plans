@@ -1,0 +1,118 @@
+\documentclass[twoside,openright]{report}
+
+\let\oldsection\section
+\def\section{\cleardoublepage\oldsection}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{cclicenses}
+\usepackage{emptypage}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\pagestyle{fancy}
+
+\fancyfoot[C]{This document is provided for informational use only. It is for
+use by authorized instructors. Consult the aircraft manual and appropriate FAA
+handbooks to double-check all information. \textcopyright{} Derek W Beck 2008.
+Some Rights Reserved. \url{http://www.derekbeck.com/}.
+\\
+\byncsa{} \href{https://creativecommons.org/licenses/by-nc-sa/3.0/us/}{Licensed
+under Creative Commons Attribution-Noncommercial-Share Alike License}.
+}
+
+\fancypagestyle{plain}
+
+\title{Certificated Flight Instructor – Airplane (CFI-A)
+Private and Commercial Pilot Lesson Plans (C182T)}
+\author{Derek W Beck}
+\date{June 2008}
+
+\begin{document}
+
+\makeatletter
+\begin{titlepage}
+  \begin{center}
+    \vspace*{1cm}
+    \textbf{\@title}
+
+    \vspace*{1cm}
+    \@author
+
+    \@date
+
+    \vspace*{2cm}
+    \ccby You may copy, distribute, display this copyrighted work -- and
+    derivative works based upon it -- but only if they give credit to Derek W
+    Beck and abide by the other license requirements listed here.
+
+    \ccnc This work and its derivatives may not be sold without permission from
+    Derek W Beck.
+
+    \ccsa You may distribute derivative works only under a license identical to
+    the licenses listed here and only if these licenses are explicitly depicted
+    somewhere on the derivative work.
+  \end{center}
+\end{titlepage}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\chapter{Aeronautical Knowledge}
+
+\input{../common/pp-intro}
+\input{../common/considerations}
+\input{../common/preflight}
+\input{../common/aerodynamics}
+\input{../common/systems}
+\input{fuel-system-c182t}
+\input{electrical-system-c182t}
+\input{../common/propeller}
+\input{../common/vfr-instruments}
+\input{../common/docs-and-maintenance}
+\input{../common/weight-and-balance}
+\input{../common/weather-theory}
+\input{../common/weather-services}
+\input{../common/airspace}
+\input{../common/airport-operations}
+\input{../common/emergency-procedures}
+\input{../common/visual-illusions}
+\input{../common/spin-avoidance}
+\input{../common/vfr-flight-planning}
+
+\chapter{Flight Training}
+
+\input{accelerated-stalls-c182t.tex}
+\input{basic-instrument-maneuvers.tex}
+\input{chandelles.tex}
+\input{climbs.tex}
+\input{descents.tex}
+\input{cross-control-stalls.tex}
+\input{crosswind-landings.tex}
+\input{crosswind-takeoffs.tex}
+\input{eights-on-pylons.tex}
+\input{elevator-trim-stalls.tex}
+\input{emergency-approaches-and-landings.tex}
+\input{forward-slip-to-land.tex}
+\input{go-arounds.tex}
+\input{lazy-eights.tex}
+\input{level-turns.tex}
+\input{normal-landings.tex}
+\input{normal-takeoffs.tex}
+\input{power-off-180.tex}
+\input{power-off-stalls.tex}
+\input{power-on-stalls.tex}
+\input{rectangular-course.tex}
+\input{secondary-stalls.tex}
+\input{short-field-landing.tex}
+\input{short-field-takeoff.tex}
+\input{slow-flight.tex}
+\input{soft-field-landing.tex}
+\input{soft-field-takeoff.tex}
+\input{steep-spiral.tex}
+\input{steep-turns.tex}
+\input{straight-and-level.tex}
+\input{s-turns.tex}
+\input{turns-around-a-point.tex}
+\input{unusual-attitudes.tex}
+
+\end{document}
